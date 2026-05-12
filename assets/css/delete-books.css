@@ -1,0 +1,108 @@
+/* Import base admin variables */
+@import url('admin.css'); 
+
+.admin-wrapper {
+    padding: 60px 10%;
+    background-color: #FFFDF9; /* Clean cream background */
+}
+
+/* Back Link - Minimalist with an arrow */
+.header-text a {
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.header-text a:hover { color: #4B2C0F; transform: translateX(-5px); }
+
+/* Remove Table Borders and Styles */
+.management-section { background: transparent; border: none; box-shadow: none; padding: 0; }
+.admin-table { border-collapse: separate; border-spacing: 0 15px; } /* Space between "strips" */
+.admin-table thead { display: none; } /* Hide the header for a cleaner list look */
+
+/* The "Strip" Row */
+.admin-table tbody tr {
+    background: #FFFFFF;
+    border: 1px solid #E6E2DF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-table tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(75, 44, 15, 0.08);
+    border-color: #8D7763;
+}
+
+.admin-table td {
+    padding: 25px;
+    border: none;
+}
+
+/* First cell: Title & Author Grouping */
+.admin-table td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.admin-table td strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #4B2C0F;
+    display: block;
+}
+
+.admin-table td .author-sub {
+    color: #8D7763;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Category Badge: Minimalist Pill */
+.badge {
+    background: #F4F1EE;
+    color: #8D7763;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Action Cell: Pushed to the right */
+.admin-table td:last-child {
+    text-align: right;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* The Remove Button: Ghost Style */
+.delete-link {
+    text-decoration: none;
+    color: #D9534F;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: 1px solid #F2DEDE;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.delete-link:hover {
+    background: #D9534F;
+    color: white;
+    border-color: #D9534F;
+}

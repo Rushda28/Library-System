@@ -1,0 +1,74 @@
+/* --- EDITORIAL SPREAD: BROWN FINISH --- */
+.editorial-spread {
+    background-color: #3D2B1F; /* Deep Umber / Dark Brown */
+    padding: 160px 10%;
+    position: relative;
+    color: #F4F1EE; /* Champagne/Off-white text */
+}
+
+.editorial-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    line-height: 0.9;
+    color: #F4F1EE; 
+    margin: 20px 0 60px 0;
+}
+
+/* Gold Accent for the title to pop against the brown */
+.editorial-title span { 
+    font-style: italic; 
+    font-weight: 400; 
+    color: #D4AF37; /* Muted Gold */
+}
+
+.floating-magazine-img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background-color: #2A1D15; /* Darker brown for the "page" slot */
+    border-radius: 5px;
+    margin-top: -100px;
+    margin-bottom: 60px;
+    box-shadow: 30px 30px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.service-no {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #D4AF37; /* Numbering in Gold */
+    margin-top: 5px;
+}
+
+/* --- THE CREDITS FOOTER: DARK BROWN --- */
+.editorial-footer {
+    background-color: #2A1D15; /* Night Brown */
+    padding: 100px 10% 40px 10%;
+    border-top: 1px solid rgba(244, 241, 238, 0.1); 
+    color: #F4F1EE;
+}
+
+.brand-logo {
+    color: #F4F1EE;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+
+.info-label {
+    color: #D4AF37; /* Gold labels */
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.footer-legal {
+    border-top: 1px solid rgba(244, 241, 238, 0.05);
+    padding-top: 30px;
+    text-align: center;
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    color: rgba(244, 241, 238, 0.4); /* Faded champagne for legal */
+}
+

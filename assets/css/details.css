@@ -1,0 +1,165 @@
+.details-wrapper {
+    padding: 100px 10%;
+    background-color: #FFFDF9;
+    min-height: 90vh;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.large-cover-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: #F4F1EE;
+    border-radius: 60px; /* High-end rounded look */
+    box-shadow: 0 40px 80px rgba(75, 44, 15, 0.1);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.status-badge.available {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+}
+
+.book-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #4B2C0F;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 1.2rem;
+    color: #8D7763;
+    margin-bottom: 40px;
+}
+
+.author span { color: #4B2C0F; font-weight: 600; }
+
+.description h3 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.book-meta {
+    margin-bottom: 50px;
+    border-top: 1px solid #E6E2DF;
+    padding-top: 30px;
+}
+
+.meta-item {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.9rem;
+}
+
+
+/* --- Refined Minimalist Button --- */
+.pill-button {
+    display: inline-block;
+    background-color: #4B2C0F; /* Chocolate Brown */
+    color: #FFFDF9;            /* Cream Text */
+    text-decoration: none;
+    padding: 14px 32px;        /* Reduced from 22px 50px */
+    border-radius: 50px;       /* Keeps the pill shape */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;       /* Elegant spacing */
+    font-size: 0.7rem;         /* Slightly smaller for a studio look */
+    transition: all 0.3s ease;
+    border: 1px solid #4B2C0F;
+}
+
+.pill-button:hover {
+    background-color: transparent;
+    color: #4B2C0F;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(75, 44, 15, 0.08);
+}
+
+/* --- Refined Back Link --- */
+.back-link {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.65rem;        /* Smaller to match the new button scale */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.back-link:hover {
+    color: #4B2C0F;
+}
+
+/* Base styling to ensure images show up in the large placeholder */
+.large-cover-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: #252525;
+    border-radius: 60px;
+    box-shadow: 0 40px 80px rgba(75, 44, 15, 0.1);
+    
+    /* Crucial for images */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.large-book-cover {
+    /* Adjust these two numbers to change the size */
+    width: 280px;         /* Fixed width for a standard book look */
+    height: 400px;        /* Fixed height to keep it consistent */
+    
+    object-fit: cover;    /* Ensures the image isn't squashed */
+    border-radius: 20px;   /* Rounded corners like your screenshot */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;       /* Centers it if needed */
+}
+
+/* Adjust the container to make sure the text isn't pushed too far */
+.book-visual {
+    flex: 0 0 300px;      /* Fixes the left side width */
+    margin-right: 40px;   /* Adds space between image and text */
+}
+/* The same image links you used in catalog.css */
+.cover-101 { background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop'); }
+.cover-102 { background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop'); }
+.cover-103 { background-image: url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1000&auto=format&fit=crop'); }
+.cover-104 { background-image: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop'); }
+.cover-105 { background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1000&auto=format&fit=crop'); }
+.cover-106 { background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1000&auto=format&fit=crop'); }

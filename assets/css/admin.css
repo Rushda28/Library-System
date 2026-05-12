@@ -1,0 +1,367 @@
+.admin-wrapper {
+    padding: 80px 10%;
+    background-color: #FFFDF9;
+    min-height: 100vh;
+}
+
+/* Admin Header */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.admin-badge {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    color: #8D7763;
+    font-weight: 700;
+}
+
+.admin-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4B2C0F;
+    margin-top: 10px;
+}
+
+.admin-header h1 span { font-style: italic; font-weight: 400; }
+
+.add-btn {
+    background: #4B2C0F;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.add-btn:hover { background: #8D7763; }
+
+/* Stats Grid */
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: white;
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid #E6E2DF;
+}
+
+.stat-card .label { display: block; font-size: 0.8rem; color: #8D7763; text-transform: uppercase; margin-bottom: 10px; }
+.stat-card .value { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #4B2C0F; }
+.stat-card.highlight { background: #F4F1EE; border-color: #8D7763; }
+
+/* Management Table */
+.management-section {
+    background: white;
+    padding: 45px;
+    border-radius: 45px;
+    border: 1px solid #E6E2DF;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.section-header { margin-bottom: 40px; }
+.section-header h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #4B2C0F; }
+.section-header p { color: #8D7763; margin-top: 5px; }
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #8D7763;
+    border-bottom: 2px solid #F4F1EE;
+}
+
+.admin-table td {
+    padding: 25px 20px;
+    border-bottom: 1px solid #F4F1EE;
+    vertical-align: middle;
+}
+
+.admin-table td strong { color: #4B2C0F; font-size: 1.1rem; }
+.admin-table td small { color: #8D7763; }
+
+/* Status Labels */
+.badge {
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge.pending { background: #FFF3E0; color: #E65100; }
+.badge.ready { background: #E8F5E9; color: #2E7D32; }
+
+/* Buttons */
+.confirm-btn {
+    background: #F4F1EE;
+    border: 1px solid #E6E2DF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #4B2C0F;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover { background: #4B2C0F; color: white; }
+
+/* Secondary Header Button */
+.manage-btn {
+    background: transparent;
+    color: #4B2C0F;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid #E6E2DF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.manage-btn:hover {
+    background: #F4F1EE;
+    border-color: #8D7763;
+}
+
+/* Ensure the header actions stay aligned */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* --- Admin Sign Out Button --- */
+.logout-link {
+    text-decoration: none;
+    color: #8D7763; /* Signature Tan */
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 24px;
+    border: 1px solid #E6E2DF;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.logout-link:hover {
+    color: #FFFDF9;
+    background-color: #4B2C0F; /* Dark Brown */
+    border-color: #4B2C0F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(75, 44, 15, 0.15);
+}
+
+.logout-link:active {
+    transform: translateY(0);
+}
+
+.admin-wrapper {
+    padding: 80px 10%;
+    background-color: #FFFDF9;
+    min-height: 100vh;
+}
+
+/* Admin Header */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.admin-badge {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    color: #8D7763;
+    font-weight: 700;
+}
+
+.admin-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4B2C0F;
+    margin-top: 10px;
+}
+
+.admin-header h1 span { font-style: italic; font-weight: 400; }
+
+.add-btn {
+    background: #4B2C0F;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.add-btn:hover { background: #8D7763; }
+
+/* Stats Grid */
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: white;
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid #E6E2DF;
+}
+
+.stat-card .label { display: block; font-size: 0.8rem; color: #8D7763; text-transform: uppercase; margin-bottom: 10px; }
+.stat-card .value { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #4B2C0F; }
+.stat-card.highlight { background: #F4F1EE; border-color: #8D7763; }
+
+/* Management Table */
+.management-section {
+    background: white;
+    padding: 45px;
+    border-radius: 45px;
+    border: 1px solid #E6E2DF;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.section-header { margin-bottom: 40px; }
+.section-header h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #4B2C0F; }
+.section-header p { color: #8D7763; margin-top: 5px; }
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #8D7763;
+    border-bottom: 2px solid #F4F1EE;
+}
+
+.admin-table td {
+    padding: 25px 20px;
+    border-bottom: 1px solid #F4F1EE;
+    vertical-align: middle;
+}
+
+.admin-table td strong { color: #4B2C0F; font-size: 1.1rem; }
+.admin-table td small { color: #8D7763; }
+
+/* Status Labels */
+.badge {
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge.pending { background: #FFF3E0; color: #E65100; }
+.badge.ready { background: #E8F5E9; color: #2E7D32; }
+
+/* Buttons */
+.confirm-btn {
+    background: #F4F1EE;
+    border: 1px solid #E6E2DF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #4B2C0F;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover { background: #4B2C0F; color: white; }
+
+/* Secondary Header Button */
+.manage-btn {
+    background: transparent;
+    color: #4B2C0F;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid #E6E2DF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.manage-btn:hover {
+    background: #F4F1EE;
+    border-color: #8D7763;
+}
+
+/* Ensure the header actions stay aligned */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* --- Admin Sign Out Button --- */
+.logout-link {
+    text-decoration: none;
+    color: #8D7763; /* Signature Tan */
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 24px;
+    border: 1px solid #E6E2DF;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.logout-link:hover {
+    color: #FFFDF9;
+    background-color: #4B2C0F; /* Dark Brown */
+    border-color: #4B2C0F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(75, 44, 15, 0.15);
+}
+
+.logout-link:active {
+    transform: translateY(0);
+}
+
+
+
+

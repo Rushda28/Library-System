@@ -1,0 +1,51 @@
+/* --- Admin Portal Footer Fix --- */
+.admin-footer {
+    background-color: #2D241E; /* Deep Espresso - Maximum Visibility */
+    padding: 60px 10%;
+    margin-top: 80px;
+    border-top: 5px solid #8D7763; /* Tan Accent Line */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: block !important;
+    clear: both;
+}
+
+.admin-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-footer p {
+    color: #E6E2DF; /* Crisp light grey-tan for easy reading */
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Specific styling for the copyright year */
+.admin-footer p:first-child {
+    color: #FFFDF9;
+    font-weight: 700;
+    opacity: 1;
+}
+
+/* Subtle accent for the location */
+.admin-footer p:last-child {
+    font-size: 0.65rem;
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+/* Optional: Add a subtle hover effect if you ever add links here */
+.admin-footer a {
+    color: #8D7763;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.admin-footer a:hover {
+    color: #FFFDF9;
+}

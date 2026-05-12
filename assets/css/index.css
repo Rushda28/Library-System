@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --chocolate: #4B2C0F;
+    --cream: #FFFDF9;
+    --tan: #8D7763;
+    --sand: #FAF7F4;
+}
+
+body {
+    background-color: var(--cream);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--chocolate);
+}
+
+/* 1. The Layout Wrapper */
+.home-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* 2. Hero Section - Magazine Style */
+.hero-section {
+    padding: 60px 5% 150px 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* 3. Large Scale Typography */
+.establishment {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--tan);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem); /* Giant typography from image */
+    line-height: 0.85;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.hero-content h1 span {
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--tan);
+    margin-left: 60px; /* Staggered look */
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+/* 4. The "Start Slide" Pill Button */
+.cta-group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pill-button {
+    background-color: var(--chocolate);
+    color: var(--cream);
+    padding: 20px 45px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(75, 44, 15, 0.2);
+}
+
+.pill-button:hover {
+    transform: translateY(-5px);
+    background-color: #2b1a09;
+}
+
+.text-link {
+    color: var(--chocolate);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-bottom: 1.5px solid var(--chocolate);
+}
+
+/* 5. The Visual Feature Card (Card-on-Card look) */
+.hero-visual {
+    position: relative;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 60px; /* Extreme rounded corners */
+    box-shadow: 0 40px 80px rgba(75, 44, 15, 0.1);
+    transform: translateY(40px);
+}
+
+.feature-image {
+    width: 100%;
+    height: 400px;
+    background-color: var(--sand);
+    background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80'); /* Professional library visual */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.feature-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.feature-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* --- Global Reset to fix the "Stacked" look --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFDF9;
+    color: #4B2C0F;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Catalog Preview Section --- */
+.catalog-preview {
+    padding: 100px 10% !important;
+    display: block !important;
+}
+
+/* --- Fix for the View Catalog Link --- */
+.view-all {
+    color: #8D7763 !important; /* Tan color */
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    border-bottom: 2px solid #8D7763 !important; /* Underline accent */
+    padding-bottom: 5px !important;
+}
+
+.view-all:hover {
+    color: var(--chocolate) !important;
+    border-bottom: 2px solid var(--chocolate);
+}
+
+/* --- Ensure Header uses Flexbox to push link to the right --- */
+.preview-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important; /* Aligns link to the bottom of the title text */
+    margin-bottom: 50px !important;
+    border-bottom: 1px solid #E6E2DF !important;
+    padding-bottom: 20px !important;
+    width: 100% !important;
+}
+
+.preview-header h2 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3.5rem !important;
+    text-transform: uppercase !important;
+}
+
+/* --- The Grid Fix: This stops the stacking --- */
+.preview-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* Force 3 columns */
+    gap: 40px !important;
+    
+}
+
+/* Update the base placeholder to handle images */
+.book-placeholder {
+    width: 100% !important;
+    height: 400px !important;
+    background-color: #F4F1EE !important;
+    border-radius: 40px !important;
+    margin-bottom: 20px !important;
+    background-size: cover; /* Ensures image fills the area */
+    background-position: center;
+    transition: transform 0.4s ease; /* Adds a nice magazine hover effect */
+}
+
+/* Add these 3 specific image classes */
+.img-arch { 
+    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80'); 
+}
+
+.img-digital { 
+    background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80') ;
+}
+
+.img-art { 
+    background-image: url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80'); 
+}
+
+/* Subtle hover effect for the images */
+.preview-item:hover .book-placeholder {
+    transform: translateY(-10px);
+}
+
+.preview-item h4 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.5rem !important;
+    margin: 10px 0 !important;
+}
+
+/* --- COMPLETE RESET FOR THIS SECTION --- */
+.editorial-section {
+    background-color: #FFFDF9; /* Signature Cream */
+    padding-top: 80px;
+    display: block;
+    width: 100%;
+}
+
+.editorial-text-wrap {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.editorial-label {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.7rem;
+    color: #8D7763; /* Tan color for labels */
+}
+
+/* MAIN TITLE: Forces the Deep Chocolate Brown */
+.editorial-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4B2C0F !important; /* Forces Deep Brown from reference */
+    margin-top: 10px;
+}
+
+/* SPAN TARGET: Forces the Mustard Gold only on "Experience" */
+.editorial-title span { 
+    color: #C5A02B !important; /* Forces the Gold color */
+    font-style: italic; 
+    font-weight: 400; 
+}
+
+/* THE DARK BOX - Deep Cocoa Finish */
+.editorial-dark-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3D352E; 
+    padding: 120px 10%;
+    border-radius: 180px 0 180px 0; 
+    gap: 50px;
+    margin-bottom: 60px; 
+    position: relative;
+    z-index: 1;
+}
+
+.editorial-no {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #8D7763; /* Restored Tan Numbers */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.editorial-item {
+    color: #FFFDF9;
+    border-left: 1px solid rgba(255, 253, 249, 0.1);
+    padding-left: 30px;
+}
+
+.editorial-item:first-child { border-left: none; }
+
+
+
+.editorial-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.editorial-item p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    line-height: 1.8;
+}
+
+/* Fix for Mobile */
+@media (max-width: 768px) {
+    .editorial-dark-box {
+        grid-template-columns: 1fr;
+        border-radius: 80px 0 0 0;
+        padding: 60px 5%;
+    }
+    .editorial-item { border-left: none; border-bottom: 1px solid rgba(255, 253, 249, 0.1); padding: 20px 0; }
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .hero-container { grid-template-columns: 1fr; text-align: center; }
+    .hero-content h1 span { margin-left: 0; }
+    .cta-group { justify-content: center; }
+    .features-grid { grid-template-columns: 1fr; padding-bottom: 50px; }
+    .home-wrapper::after { height: 600px; }
+}

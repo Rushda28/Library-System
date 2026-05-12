@@ -1,0 +1,216 @@
+/* --- Entry Wrapper --- */
+.entry-wrapper {
+    background-color: #FFFDF9; /* Signature Cream */
+    padding: 100px 10%;
+    min-height: 90vh;
+}
+
+.back-navigation {
+    margin-bottom: 50px;
+}
+
+.minimal-back {
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.minimal-back:hover {
+    color: #4B2C0F;
+    padding-left: 5px;
+}
+
+/* --- The Form Container (Editorial Split) --- */
+.entry-form-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr; /* Editorial asymmetrical split */
+    background: #252525; /* High-contrast Charcoal */
+    border-radius: 200px 0 0 0; /* Signature Archive Curve */
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.15);
+}
+
+/* --- Left Side: Header --- */
+.entry-header {
+    padding: 80px 60px;
+    background-color: #4B2C0F; /* Dark Chocolate side tab */
+    color: #FFFDF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entry-header .label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #8D7763;
+    margin-bottom: 20px;
+}
+
+.entry-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.entry-header h1 span {
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    opacity: 0.7;
+}
+
+.entry-header p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #FFFDF9;
+    opacity: 0.6;
+    max-width: 250px;
+}
+
+/* --- Right Side: The Form --- */
+.studio-form {
+    padding: 80px;
+    background-color: #252525;
+}
+
+.input-block {
+    margin-bottom: 45px;
+    position: relative;
+     color: #8D7763;
+}
+
+.studio-form input, 
+.studio-form select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8D7763;
+    padding: 15px 0;
+    color: #FFFDF9;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Magazine underline effect */
+.studio-form input:focus {
+    border-bottom-color: #8D7763;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+
+/* --- Category Select Customization --- */
+.studio-form select {
+    cursor: pointer;
+    appearance: none;
+}
+
+.studio-form option {
+    background-color: #252525;
+    color: #FFFDF9;
+}
+
+/* --- Submit Button --- */
+.form-footer {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.submit-entry {
+    background-color: #8D7763;
+    color: #FFFDF9;
+    padding: 22px 60px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.submit-entry:hover {
+    background-color: #FFFDF9;
+    color: #252525;
+    transform: translateY(-5px);
+}
+
+/* Container for the alert to ensure it centers within your form width */
+.alert-msg {
+    max-width: 600px;
+    margin: 0 auto 30px auto; /* Centers the box and adds space below */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif; /* Or your theme's font */
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft professional shadow */
+    animation: slideDown 0.4s ease-out; /* Smooth entrance */
+}
+
+/* Success Styling - Subtle Green */
+.success-box {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+/* Error Styling - Subtle Red */
+.error-box {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.alert-msg p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.alert-msg strong {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Animation for a "Premium" feel */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Mobile Fix --- */
+@media (max-width: 1024px) {
+    .entry-form-container {
+        grid-template-columns: 1fr;
+        border-radius: 80px 0 0 0;
+    }
+    .entry-header {
+        padding: 60px;
+    }
+    .studio-form {
+        padding: 60px 40px;
+    }
+}

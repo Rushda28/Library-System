@@ -1,0 +1,205 @@
+.profile-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 5%;
+}
+
+/* Hero Section */
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #E6E2DF;
+    padding-bottom: 60px;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; /* Fully circular */
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(75, 44, 15, 0.1);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4B2C0F;
+    margin: 10px 0;
+}
+
+.profile-info h1 span {
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.edit-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8D7763;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #8D7763;
+}
+
+/* Dashboard & Search */
+.profile-dashboard {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 40px;
+}
+
+.search-box-editorial {
+    background-color: #2D2926; /* Deep Charcoal from our previous fix */
+    padding: 60px;
+    border-radius: 60px 0 60px 0; /* Asymmetric curves */
+    color: #FFFDF9;
+}
+
+.search-box-editorial h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.editorial-form {
+    display: flex;
+    gap: 15px;
+}
+
+.editorial-form input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,253,249,0.3);
+    padding: 15px 0;
+    color: #FFFDF9;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+.editorial-form button {
+    background: #FFFDF9;
+    color: #2D2926;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editorial-form button:hover {
+    background: #8D7763;
+    color: #FFFDF9;
+}
+
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-card {
+    background: #F4F1EE;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.stat-no {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4B2C0F;
+}
+
+.account-security {
+    margin-top: 60px;
+    border-top: 1px solid #EEE;
+    padding-top: 40px;
+}
+
+.security-card {
+    background: #2A1D15; /* Night Brown */
+    padding: 40px;
+    color: #F4F1EE;
+}
+
+.security-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.security-card p {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+/* Top Sign Out Pill */
+.signout-pill {
+    padding: 10px 22px;
+    border: 1px solid #4B2C0F;
+    color: #4B2C0F;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.signout-pill:hover {
+    background-color: #4B2C0F;
+    color: #F4F1EE;
+    transform: translateY(-2px);
+}
+
+/* Hero Adjustments */
+.profile-info {
+    flex: 1;
+}
+
+.info-header {
+    width: 100%;
+}
+
+/* Simplified Bottom Section */
+.account-security {
+    margin-top: 60px;
+    border-top: 1px solid #E6E2DF;
+    padding-top: 20px;
+}
+
+.security-note {
+    font-size: 0.7rem;
+    color: #8D7763;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Ensure the Hero section can handle the flex-between */
+.profile-info {
+    flex: 1; /* Makes the info take up the remaining space */
+}
+
+/* Adjust mobile view so things don't overlap */
+@media (max-width: 768px) {
+    .info-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

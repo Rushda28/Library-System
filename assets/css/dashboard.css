@@ -1,0 +1,340 @@
+/* --- Dashboard Layout --- */
+.dashboard-wrapper {
+    padding: 100px 10%;
+    background-color: #FFFDF9; /* Signature Cream */
+    min-height: 80vh;
+}
+
+.dashboard-header {
+    margin-bottom: 60px;
+}
+
+.welcome-label {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    color: #8D7763;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dashboard-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4B2C0F;
+}
+
+.dashboard-header h1 span {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* --- Dashboard Grid --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 60px;
+}
+
+/* --- Success Toast --- */
+.success-toast {
+    background-color: #F4F1EE;
+    border-left: 5px solid #8D7763;
+    padding: 25px 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.toast-content .icon {
+    font-size: 1.5rem;
+    color: #8D7763;
+}
+
+/* --- Reservation Cards --- */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E6E2DF;
+    padding-bottom: 15px;
+}
+
+.reservation-card {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #E6E2DF;
+    padding: 25px;
+    border-radius: 40px;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.res-visual .mini-cover {
+    width: 80px;
+    height: 110px;
+    background-color: #F4F1EE;
+    border-radius: 10px;
+}
+
+.res-info .category {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8D7763;
+}
+
+.res-info h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #4B2C0F;
+    color: #FFFDF9;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+/* --- Stats Sidebar --- */
+.user-stats h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: #F4F1EE;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+/* Fix for the Pending Pickup Box */
+.pending-box {
+    border-left: 5px solid #8D7763 !important; /* Adds the missing curved border */
+}
+
+.pending-box .stat-num { color: #8D7763; }
+.issued-box .stat-num  { color: #D4AF37; }
+.returned-box .stat-num { color: #4B2C0F; } /* Darker for better visibility */
+
+.stat-num {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4B2C0F;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8D7763;
+}
+
+.stat-box.promo {
+    background: #252525;
+    color: #FFFDF9;
+}
+
+/* --- Dashboard Image Fix --- */
+.mini-cover.cover-101 {
+    width: 80px;
+    height: 110px;
+    background-color: #F4F1EE;
+    border-radius: 10px;
+    /* Ensure the image shows up */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* --- Dashboard Image Fix --- */
+/* This combines the rules to force the image to show */
+.mini-cover.cover-101 {
+    width: 80px;
+    height: 110px;
+    background-color: #252525; /* Dark fallback */
+    border-radius: 10px;
+    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: block !important;
+}
+
+/* --- Cancel Reservation Button Styling --- */
+.res-action {
+    margin-left: auto; /* Pushes button to the far right */
+}
+
+.cancel-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #8D7763;            /* Tan color */
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    border: 1px solid #E6E2DF; /* Very light border */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cancel-link:hover {
+    color: #D9534F;            /* Soft muted red for "Cancel" */
+    border-color: #D9534F;
+    background-color: rgba(217, 83, 79, 0.05);
+    transform: translateY(-2px);
+}
+
+/* --- Profile Header Section --- */
+.profile-trigger {
+    text-align: center;
+}
+
+.profile-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.avatar-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #E6E2DF; /* Same border color as your cards */
+    transition: all 0.3s ease;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-cta {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #8D7763; /* Your signature tan color */
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.profile-link:hover .avatar-wrapper {
+    border-color: #4B2C0F; /* Dark brown on hover */
+    transform: translateY(-2px);
+}
+
+.profile-link:hover .profile-cta {
+    color: #4B2C0F;
+}
+
+/* Container for the book visual */
+.mini-cover {
+    width: 60px;
+    height: 80px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* --- Darker Category Backgrounds --- */
+.cover-technology { background: #1A1A1A !important; color: #D4AF37 !important; }
+.cover-science    { background: #2A1D15 !important; color: #F4F1EE !important; }
+.cover-business   { background: #3E362E !important; color: #D4AF37 !important; }
+.cover-architecture { background: #1F1F1F !important; color: #D4AF37 !important; }
+.cover-fine-arts  { background: #2D2926 !important; color: #E6E2DF !important; }
+
+/* --- The Initial Letter (Restored to Original Clean Look) --- */
+.mini-cover .initial {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; /* Balanced size */
+    font-weight: 700;
+    opacity: 1;        /* Fully visible, no more faded look */
+    text-shadow: none; /* Removed the heavy shadow */
+    text-transform: uppercase;
+}
+
+/* --- Ensure the visual container is clean --- */
+.res-visual .mini-cover {
+    width: 80px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Card Depth */
+.reservation-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-card:hover {
+    transform: translateX(10px);
+    box-shadow: -10px 10px 30px rgba(75, 44, 15, 0.08);
+}
+
+/* Darker Status Tags */
+.status-issued { background: #4B2C0F; color: #D4AF37; }
+.status-pending { background: #E6E2DF; color: #4B2C0F; border: 1px solid #CCC; }
+
+/* The Letter Initial on the cover */
+.mini-cover .initial {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+/* Status Tag Colors */
+.status-tag {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #EEE;
+}
+
+.status-returned {
+    background-color: #E8F5E9 !important; /* Soft mint background */
+    color: #2E4F3F !important;           /* Deep emerald text - very readable */
+    border: 1px solid #C8E6C9 !important; /* Subtle green border */
+    font-weight: 800;                     /* Extra bold for clarity */
+}
+
+
+
+.status-issued { background: #D4AF37; color: #FFF; } /* Gold for borrowed */
+.status-pending { background: #8D7763; color: #FFF; } /* Brown for waiting */
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,145 @@
+.settings-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 5%;
+}
+
+.settings-header {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #E6E2DF;
+    padding-bottom: 40px;
+}
+
+.settings-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #4B2C0F;
+}
+
+.settings-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 80px;
+}
+
+/* Sidebar Navigation */
+.settings-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-nav li {
+    margin-bottom: 20px;
+}
+
+.settings-nav a {
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.settings-nav a.active {
+    color: #4B2C0F;
+    border-left: 2px solid #4B2C0F;
+    padding-left: 15px;
+}
+
+.back-link {
+    margin-top: 40px;
+    display: block;
+    font-style: italic;
+}
+
+/* Form Styling */
+.editorial-form .form-group {
+    margin-bottom: 30px;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.editorial-form label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8D7763;
+    margin-bottom: 10px;
+}
+
+.editorial-form input, 
+.editorial-form select {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #E6E2DF;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #2D2926;
+    outline: none;
+}
+
+.editorial-form input:focus {
+    border-bottom: 1px solid #4B2C0F;
+}
+
+/* Custom File Upload */
+.file-upload-wrapper input {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px dashed #8D7763;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #8D7763;
+}
+
+/* Action Buttons */
+.form-actions {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.save-button {
+    background-color: #2D2926; /* Deep Charcoal */
+    color: #FFFDF9;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-button:hover {
+    background-color: #4B2C0F;
+    transform: translateY(-3px);
+}
+
+.cancel-button {
+    background: transparent;
+    border: none;
+    color: #8D7763;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+nav.main-nav {
+    background-color: #FFFDF9;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #4B2C0F;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-logo span { font-weight: 400; opacity: 0.7; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8D7763;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.btn-contact {
+    
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+/* Styling for the new Login Button */
+.btn-login {
+    background-color: #4B2C0F; /* The deep brown from your logo */
+    color: #FFFDF9 !important; /* Cream text color */
+    padding: 8px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #8D7763; /* Lighter brown on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Ensure the list items stay centered vertically */
+.nav-links li {
+    display: flex;
+    align-items: center;
+}

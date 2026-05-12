@@ -1,0 +1,157 @@
+/* --- Success Wrapper --- */
+.success-wrapper {
+    background-color: #FFFDF9; /* Signature Cream */
+    padding: 120px 10%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr; /* Editorial Split */
+    background: #252525; /* Charcoal from your Grid fix */
+    border-radius: 250px 0 250px 0; /* Signature asymmetrical curves */
+    overflow: hidden;
+    color: #FFFDF9;
+}
+
+/* --- The Rotating Seal --- */
+.editorial-seal {
+    background-color: #4B2C0F; /* Chocolate */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px;
+}
+
+.editorial-seal svg {
+    width: 200px;
+    height: 200px;
+    animation: rotate 20s linear infinite;
+}
+
+.editorial-seal text {
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    fill: #8D7763;
+    letter-spacing: 2px;
+}
+
+.check-icon {
+    position: absolute;
+    font-size: 3rem;
+    color: #FFFDF9;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* --- Content Styling --- */
+.success-content {
+    padding: 80px;
+}
+
+.success-content .label {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.7rem;
+    color: #8D7763;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.success-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.success-content h1 span {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.success-msg {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* --- Step Process --- */
+.next-steps {
+    display: flex;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 253, 249, 0.1);
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.step {
+    flex: 1;
+}
+
+.step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #8D7763;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.step p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+/* --- Buttons --- */
+.action-footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pill-button {
+    background-color: #8D7763;
+    color: #FFFDF9;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.pill-button:hover {
+    background-color: #FFFDF9;
+    color: #252525;
+}
+
+.secondary-link {
+    color: #FFFDF9;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #8D7763;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .success-container {
+        grid-template-columns: 1fr;
+        border-radius: 100px 0 100px 0;
+    }
+}
